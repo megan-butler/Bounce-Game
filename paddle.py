@@ -2,7 +2,7 @@ class Paddle:
     def __init__(self, canvas, color):
         self.canvas = canvas
         # Paddle size x y axis
-        self.id = canvas.create_rectangle(0, 0, 100, 10, fill=color)
+        self.id = canvas.create_rectangle(-200, 0, 400, 10, fill=color)
         self.canvas.move(self.id, 200, 485)
         self.x = 0
         self.pausec=0
@@ -27,7 +27,8 @@ class Paddle:
         self.x = -3.5
 
     def turn_right(self, event):
-        self.x = 0.5
+        self.x = 3.5
+    
 
     def pauser(self,event):
         self.pausec+=1

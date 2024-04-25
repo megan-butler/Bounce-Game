@@ -29,7 +29,7 @@ def start_game(event):
                        "DodgerBlue4", "wheat2", "RosyBrown2", "bisque3", "DarkSeaGreen1"]
         random.shuffle(BALL_COLOR)
         # Colour of the paddle
-        paddle = Paddle(canvas, "blue")
+        paddle = Paddle(canvas, "pink")
         bricks = []
         for i in range(0, 5):
             b = []
